@@ -1,42 +1,19 @@
-// ===== CONFIGURAÇÕES DO EVENTO =====
-// Troque pela data/hora oficiais.
-// Exemplo: "2026-12-12T08:00:00-03:00"
+// ALTERE ESTES DOIS VALORES ANTES DE PUBLICAR
 const EVENT_DATE = "2026-12-12T08:00:00-03:00";
-
-// Quando criar o Google Forms, cole o link aqui.
-// Exemplo: "https://forms.gle/SEU-LINK"
 const REGISTRATION_URL = "";
 
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const hamburger=document.querySelector(".hamb");
+const nav=document.querySelector("nav");
+hamburger?.addEventListener("click",()=>nav.classList.toggle("open"));
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
 
-menuToggle?.addEventListener('click', () => {
-  const open = menu.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(open));
-});
+const btn=document.getElementById("register");
+if(REGISTRATION_URL&&btn){btn.href=REGISTRATION_URL;btn.textContent="INSCREVA-SE →";btn.classList.remove("disabled");}
 
-document.querySelectorAll('.menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu?.classList.remove('open');
-    menuToggle?.setAttribute('aria-expanded', 'false');
-  });
-});
-
-const registrationButton = document.getElementById('registrationButton');
-if (registrationButton && REGISTRATION_URL) {
-  registrationButton.href = REGISTRATION_URL;
-  registrationButton.textContent = 'INSCREVA SUA EQUIPE';
+const target=new Date(EVENT_DATE).getTime();
+function update(){
+ const d=Math.max(0,target-Date.now());
+ const vals={days:Math.floor(d/86400000),hours:Math.floor(d/3600000)%24,mins:Math.floor(d/60000)%60,secs:Math.floor(d/1000)%60};
+ for(const [id,v] of Object.entries(vals)){const e=document.getElementById(id);if(e)e.textContent=String(v).padStart(2,"0");}
 }
-
-function updateCountdown() {
-  const target = new Date(EVENT_DATE).getTime();
-  const distance = target - Date.now();
-  if (distance <= 0) return;
-
-  document.getElementById('days').textContent = String(Math.floor(distance / 86400000)).padStart(2,'0');
-  document.getElementById('hours').textContent = String(Math.floor((distance % 86400000) / 3600000)).padStart(2,'0');
-  document.getElementById('minutes').textContent = String(Math.floor((distance % 3600000) / 60000)).padStart(2,'0');
-  document.getElementById('seconds').textContent = String(Math.floor((distance % 60000) / 1000)).padStart(2,'0');
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
+update();setInterval(update,1000);

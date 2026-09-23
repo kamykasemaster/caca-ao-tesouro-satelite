@@ -1,306 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#120e0a">
-  <meta name="description" content="Caça ao Tesouro – Conjunto Satélite. Uma aventura urbana cheia de enigmas, pistas e desafios.">
-  <title>Caça ao Tesouro – Conjunto Satélite</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caça ao Tesouro | Conjunto Satélite</title>
+<meta name="description" content="Caça ao Tesouro – Conjunto Satélite, Belém-PA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#inicio" aria-label="Caça ao Tesouro - início">
-        <div class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" role="img">
-            <circle cx="50" cy="50" r="46" class="gold-stroke"/>
-            <path d="M27 67 L73 33 M27 33 L73 67" class="bone"/>
-            <circle cx="50" cy="48" r="24" class="skull"/>
-            <circle cx="42" cy="46" r="5" class="eye"/>
-            <circle cx="58" cy="46" r="5" class="eye"/>
-            <path d="M46 56 L54 56 L50 62 Z" class="nose"/>
-            <path d="M42 65 Q50 70 58 65" class="teeth"/>
-            <path d="M50 8 L54 20 L50 25 L46 20 Z" class="compass"/>
-          </svg>
-        </div>
-        <div>
-          <strong>CAÇA AO TESOURO</strong>
-          <span>CONJUNTO SATÉLITE</span>
-        </div>
-      </a>
+<div class="topbar">EXPEDIÇÃO OFICIAL • CONJUNTO SATÉLITE • BELÉM — PA</div>
+<header><div class="container nav">
+<a class="brand" href="#inicio"><span class="seal">✦</span><span><b>CAÇA AO TESOURO</b><small>CONJUNTO SATÉLITE</small></span></a>
+<button class="hamb">☰</button>
+<nav>
+<a href="#experiencia">Experiência</a><a href="#lenda">A Lenda</a><a href="#mapa">Mapa</a><a href="#tesouro">Tesouro</a><a href="#parceiros">Parceiros</a><a href="#faq">FAQ</a><a class="navcta" href="#inscricao">Inscreva-se</a>
+</nav></div></header>
 
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      <nav class="menu">
-        <a href="#aventura">A aventura</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#mapa">Mapa</a><a href="#premios">Prêmios</a>
-        <a href="#parceiros">Parceiros</a>
-        <a href="#faq">FAQ</a>
-        <a class="nav-cta" href="#inscricao">Quero participar</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="inicio">
-    <section class="hero">
-      <div class="hero-glow"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span></span> UMA AVENTURA ESTÁ CHEGANDO</div>
-          <h1>O mapa foi perdido.<br><em>O tesouro ainda existe.</em></h1>
-          <p class="hero-text">
-            Reúna sua equipe, siga as pistas, decifre os enigmas e descubra os segredos escondidos pelo Conjunto Satélite.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#inscricao">QUERO ENTRAR NA AVENTURA</a>
-            <a class="button ghost" href="#aventura">Conhecer a história</a>
-          </div>
-          <div class="hero-note">
-            <span class="pulse"></span>
-            <strong>4 a 6 pessoas por equipe</strong>
-            <span>•</span>
-            <span>Desafios + pistas + exploração</span>
-          </div>
-        </div>
-<div class="countdown-card">
-  <div class="countdown-title">A CAÇADA COMEÇA EM</div>
-  <div class="countdown">
-    <div><b id="days">--</b><span>DIAS</span></div>
-    <div><b id="hours">--</b><span>HORAS</span></div>
-    <div><b id="minutes">--</b><span>MIN</span></div>
-    <div><b id="seconds">--</b><span>SEG</span></div>
-  </div>
-  <small>Defina a data oficial no arquivo <strong>script.js</strong>.</small>
+<main>
+<section id="inicio" class="hero"><div class="hero-grid container">
+<div>
+<p class="eyebrow">✦ UMA NOVA AVENTURA ESTÁ SENDO PREPARADA</p>
+<h1>O MAPA FOI<br><em>PERDIDO.</em><br>O TESOURO NÃO.</h1>
+<p class="lead">Uma caça ao tesouro urbana no Conjunto Satélite. Reúna sua equipe, siga as pistas, decifre os enigmas e descubra o segredo escondido.</p>
+<div class="actions"><a class="btn gold" href="#inscricao">QUERO PARTICIPAR →</a><a class="btn outline" href="#lenda">CONHEÇA A LENDA</a></div>
+<div class="stats"><div><b>4–6</b><span>exploradores</span></div><div><b>100%</b><span>aventura presencial</span></div><div><b>?</b><span>tesouro secreto</span></div></div>
 </div>
+<div class="emblem"><div class="ring"></div><div class="compass">N<br>✦<br>S</div><div class="skull">☠</div><div class="bones">╲ ╱</div><div class="redx">X</div><div class="id">EXPEDIÇÃO<br><b>017</b></div></div>
+</div><div class="scroll">ROLE PARA DESCOBRIR ↓</div></section>
 
+<section class="countdown"><div class="container countin"><div><small>PRÓXIMA EXPEDIÇÃO</small><b>DATA EM DEFINIÇÃO</b></div><div class="timer"><div><b id="days">00</b><small>DIAS</small></div><div><b id="hours">00</b><small>HORAS</small></div><div><b id="mins">00</b><small>MIN</small></div><div><b id="secs">00</b><small>SEG</small></div></div></div></section>
 
-        <div class="hero-emblem">
-          <div class="emblem-halo"></div>
-          <div class="big-emblem">
-            <svg viewBox="0 0 500 500" aria-label="Emblema da Caça ao Tesouro">
-              <defs>
-                <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity=".45"/></filter>
-                <linearGradient id="gold" x1="0" x2="1">
-                  <stop offset="0" stop-color="#7f5517"/>
-                  <stop offset=".5" stop-color="#e7bb57"/>
-                  <stop offset="1" stop-color="#9b6a20"/>
-                </linearGradient>
-              </defs>
-              <circle cx="250" cy="250" r="225" fill="#16100b" stroke="url(#gold)" stroke-width="14" filter="url(#shadow)"/>
-              <circle cx="250" cy="250" r="198" fill="none" stroke="#5e421b" stroke-width="3" stroke-dasharray="5 11"/>
-              <g stroke="#d2a545" stroke-width="10" stroke-linecap="round">
-                <path d="M105 355 L395 145"/>
-                <path d="M105 145 L395 355"/>
-              </g>
-              <g fill="#cfa34a" stroke="#4a3110" stroke-width="5">
-                <path d="M92 362 l35 -12 22 25 -33 19z"/>
-                <path d="M373 125 l35 12 -24 27 -33 -19z"/>
-                <path d="M92 138 l34 13 -20 25 -34 -20z"/>
-                <path d="M370 355 l35 10 -25 21 -33 -18z"/>
-              </g>
-              <circle cx="250" cy="245" r="111" fill="#c9a04b" stroke="#3a270e" stroke-width="7"/>
-              <path d="M173 253 Q174 174 250 164 Q326 174 327 253 L313 337 Q250 371 187 337 Z" fill="#e2c06c" stroke="#4b3514" stroke-width="8"/>
-              <ellipse cx="209" cy="245" rx="25" ry="30" fill="#1b120b"/>
-              <ellipse cx="291" cy="245" rx="25" ry="30" fill="#1b120b"/>
-              <path d="M236 263 L264 263 L250 286 Z" fill="#24170d"/>
-              <path d="M203 311 Q250 342 297 311" fill="none" stroke="#3a2610" stroke-width="8"/>
-              <g stroke="#3a2610" stroke-width="5">
-                <path d="M215 313 v24"/><path d="M231 318 v27"/><path d="M250 320 v29"/>
-                <path d="M269 318 v27"/><path d="M285 313 v24"/>
-              </g>
-              <path d="M167 190 Q250 130 333 190 L321 212 Q250 170 179 212 Z" fill="#9c2d25" stroke="#42130f" stroke-width="6"/>
-              <path d="M250 157 Q291 147 322 172 L301 195 Q274 177 250 180Z" fill="#b7392e"/>
-              <g transform="translate(250 72)" fill="none" stroke="#d8ad4d" stroke-width="5">
-                <circle r="31"/><path d="M0-30 L8-8 L30 0 L8 8 L0 30 L-8 8 L-30 0 L-8-8 Z"/>
-              </g>
-              <path d="M198 401 Q250 425 302 401" fill="none" stroke="#8f6826" stroke-width="6"/>
-              <text x="250" y="437" text-anchor="middle" fill="#dcb65c" font-family="Georgia,serif" font-size="19" letter-spacing="5">SATÉLITE</text>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-hint">↓ DESÇA PARA DESCOBRIR</div>
-    </section>
+<section id="experiencia" class="section"><div class="container">
+<div class="heading"><span>01 / EXPERIÊNCIA</span><h2>Não é apenas uma brincadeira.<br><em>É uma expedição.</em></h2><p>Raciocínio, observação, movimento e trabalho em equipe em uma experiência criada para envolver os participantes.</p></div>
+<div class="cards"><article><small>01</small><strong>⌖</strong><h3>EXPLORE</h3><p>Percorra a região em busca de pistas e pontos secretos.</p></article><article><small>02</small><strong>◇</strong><h3>DECIFRE</h3><p>Resolva códigos, enigmas e mensagens deixadas por Orion.</p></article><article><small>03</small><strong>♧</strong><h3>COOPERE</h3><p>Cada integrante tem uma função. A equipe pensa junta.</p></article><article><small>04</small><strong>✦</strong><h3>ENCONTRE</h3><p>Monte o mapa final e descubra onde o tesouro está.</p></article></div>
+</div></section>
 
-    <section id="aventura" class="section parchment">
-      <div class="container two-col">
-        <div>
-          <div class="section-kicker">A LENDA</div>
-          <h2>O Segredo do <span>Mapa Perdido</span></h2>
-          <p>
-            Diz a lenda que o Capitão Orion escondeu um tesouro e dividiu seu mapa em pistas espalhadas pelo caminho.
-            Agora, uma nova geração de exploradores foi convocada para encontrá-lo.
-          </p>
-          <p>
-            Mas existe uma regra: ninguém chega ao tesouro sozinho. É preciso observar, raciocinar, colaborar e enxergar
-            aquilo que passa despercebido.
-          </p>
-          <div class="quote-card">
-            <span class="quote-mark">“</span>
-            <p>O verdadeiro tesouro pertence àqueles que conseguem enxergar além da primeira pista.</p>
-            <strong>— Capitão Orion</strong>
-          </div>
-        </div>
-        <div class="old-map">
-          <div class="map-compass">N<br><small>↑</small></div>
-          <div class="map-line l1"></div>
-          <div class="map-line l2"></div>
-          <div class="map-line l3"></div>
-          <div class="map-x">X</div>
-          <div class="map-label">MAPA<br>PERDIDO</div>
-        </div>
-      </div>
-    </section>
+<section id="lenda" class="section dark"><div class="container story"><div class="paper"><div class="stamp">REGISTRO DE<br>EXPEDIÇÃO<br><b>017</b></div><div class="bigx">X</div></div><div><span>02 / A LENDA</span><h2>O Segredo do<br><em>Mapa Perdido</em></h2><p class="lead">Há muitos anos, o explorador Capitão Orion encontrou um tesouro que não poderia ser guardado por uma única pessoa.</p><p>Antes de desaparecer, Orion dividiu o mapa em fragmentos e espalhou as pistas por lugares que só os verdadeiros exploradores conseguiriam reconhecer.</p><p>Agora, um novo grupo foi convocado. O mapa voltou a aparecer. E alguém precisa terminar a expedição.</p><blockquote>“O verdadeiro tesouro não pertence a quem corre mais. Pertence a quem consegue enxergar o que os outros não percebem.”<small>— Diário de Orion</small></blockquote></div></div></section>
 
-    <section id="como-funciona" class="section dark-section">
-      <div class="container">
-        <div class="section-heading centered">
-          <div class="section-kicker">A MISSÃO</div>
-          <h2>Como funciona?</h2>
-          <p>Uma experiência em equipe, com desafios espalhados pelo Conjunto Satélite.</p>
-        </div>
-        <div class="steps">
-          <article class="step"><div class="step-number">01</div><h3>Monte sua equipe</h3><p>Reúna de 4 a 6 exploradores e escolha um nome para sua equipe.</p></article>
-          <article class="step"><div class="step-number">02</div><h3>Receba a primeira pista</h3><p>No início da aventura, sua equipe recebe o material necessário para começar.</p></article>
-          <article class="step"><div class="step-number">03</div><h3>Decifre os enigmas</h3><p>Resolva códigos, observe o ambiente, encontre símbolos e siga as instruções.</p></article>
-          <article class="step"><div class="step-number">04</div><h3>Encontre o tesouro</h3><p>Monte o mapa final, localize o destino e complete a missão antes das outras equipes.</p></article>
-        </div>
+<section id="mapa" class="section"><div class="container"><div class="heading split"><div><span>03 / O TERRITÓRIO</span><h2>Seu bairro.<br><em>Seu campo de aventura.</em></h2></div><p>O percurso será formado por desafios em pontos públicos e parceiros. As localizações exatas serão reveladas durante a expedição.</p></div>
+<div class="map"><div class="roads"></div><div class="mapname">CONJUNTO<br><b>SATÉLITE</b></div><i class="pin p1">✦</i><i class="pin p2">?</i><i class="pin p3">◆</i><div class="north">N<br>✦<br>S</div><div class="secret">LOCALIZAÇÕES<br>CONFIDENCIAIS</div></div><div class="legend">✦ desafio &nbsp;&nbsp; ◆ parceiro &nbsp;&nbsp; ? pista secreta</div></div></section>
 
-        <div class="challenge-grid">
-          <div class="challenge"><span>✦</span><strong>Enigmas</strong><small>Raciocínio e lógica</small></div>
-          <div class="challenge"><span>⌖</span><strong>Mapa</strong><small>Orientação e observação</small></div>
-          <div class="challenge"><span>◈</span><strong>QR Codes</strong><small>Pistas digitais</small></div>
-          <div class="challenge"><span>⚑</span><strong>Missões</strong><small>Desafios em equipe</small></div>
-        </div>
-      </div>
-    </section>
+<section id="tesouro" class="section prize"><div class="container prizegrid"><div><span>04 / O TESOURO</span><h2>O que existe<br>dentro do <em>baú?</em></h2><p class="lead">O conteúdo dos prêmios será anunciado conforme os parceiros da expedição forem confirmados.</p><ul><li>✦ Prêmio principal</li><li>✦ Prêmios especiais</li><li>✦ Brindes de participação</li><li>✦ Experiências dos parceiros</li></ul></div><div class="chest"><div class="lid"></div><div class="body"></div><div class="lock">◆</div><b>✦</b></div></div></section>
 
-    
-<section id="mapa" class="section map-section">
-  <div class="container map-layout">
-    <div>
-      <div class="section-kicker">O TERRITÓRIO DA AVENTURA</div>
-      <h2>Mapa do <span>Conjunto Satélite</span></h2>
-      <p>Esta área receberá o mapa oficial simplificado do evento. Os pontos reais das pistas podem ser adicionados somente quando o percurso estiver definido.</p>
-      <div class="map-legend">
-        <div><i class="dot start"></i> Partida</div>
-        <div><i class="dot mission"></i> Missão</div>
-        <div><i class="dot partner"></i> Parceiro</div>
-        <div><i class="dot treasure"></i> Tesouro</div>
-      </div>
-      <div class="notice">⚠ Os pontos reais das pistas não aparecem nesta versão para preservar o mistério.</div>
-    </div>
-    <div class="satellite-map">
-      <div class="street s1"></div><div class="street s2"></div><div class="street s3"></div>
-      <div class="street s4"></div><div class="street s5"></div><div class="street s6"></div>
-      <div class="map-center">MAPA DA<br>AVENTURA</div>
-      <div class="map-pin pin1">⚑</div><div class="map-pin pin2">?</div><div class="map-pin pin3">X</div>
-    </div>
-  </div>
-</section>
+<section id="parceiros" class="section dark"><div class="container"><div class="heading center"><span>05 / PARCEIROS</span><h2>Quem acredita na<br><em>aventura.</em></h2><p>Marcas locais podem fazer parte da expedição como apoiadores, parceiros ou patrocinadores.</p></div><div class="sponsors"><div class="sponsor master"><small>PATROCINADOR MASTER</small><b>SUA MARCA</b><i>ESPAÇO RESERVADO</i></div><div class="sponsor"><small>PARCEIRO OFICIAL</small><b>SUA MARCA</b></div><div class="sponsor"><small>PARCEIRO OFICIAL</small><b>SUA MARCA</b></div><div class="sponsor"><small>APOIADOR</small><b>SUA MARCA</b></div></div><div class="partnerbar"><div><b>Quer colocar sua marca no mapa?</b><span>Ative sua empresa com missão, prêmio, cupom ou apoio à produção.</span></div><a class="btn gold" href="#contato">SEJA PARCEIRO →</a></div></div></section>
 
-<section id="premios" class="section treasure-section">
-      <div class="container">
-        <div class="section-heading centered">
-          <div class="section-kicker">O QUE ESTÁ EM JOGO</div>
-          <h2>O tesouro espera por você</h2>
-          <p>Prêmios, brindes e experiências oferecidos com apoio de parceiros locais.</p>
-        </div>
-        <div class="prize-box">
-          <div class="chest-art" aria-hidden="true">
-            <div class="chest-lid"></div><div class="chest-body"></div><div class="lock">◆</div>
-            <div class="coins c1"></div><div class="coins c2"></div><div class="coins c3"></div>
-          </div>
-          <div class="prize-copy">
-            <div class="prize-label">TESOURO FINAL</div>
-            <h3>O conteúdo do baú será revelado no grande dia.</h3>
-            <p>Os prêmios podem incluir produtos, vouchers, experiências e brindes oferecidos pelos parceiros do evento.</p>
-            <a class="button gold" href="#parceiros">Ver parceiros</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="inscricao" class="section register"><div class="container registerbox"><div><span>06 / INSCRIÇÕES</span><h2>Monte sua equipe.<br><em>A aventura começa aqui.</em></h2><p>As equipes terão de 4 a 6 participantes. O formulário oficial será disponibilizado quando a data da expedição for confirmada.</p></div><div class="registeraction"><small>● INSCRIÇÕES EM PREPARAÇÃO</small><a id="register" class="btn darkbtn disabled" href="#">EM BREVE →</a><p>O botão será ativado quando o formulário estiver disponível.</p></div></div></section>
 
-    <section id="parceiros" class="section parchment">
-      <div class="container">
-        <div class="section-heading">
-          <div class="section-kicker">MAPA DOS PARCEIROS</div>
-          <h2>Empresas que ajudam a construir a aventura</h2>
-          <p>Espaço reservado para logos, ativações, pontos de missão e apoiadores.</p>
-        </div>
-        <div class="partner-grid">
-          <div class="partner-placeholder">SEU LOGO AQUI</div>
-          <div class="partner-placeholder">SEU LOGO AQUI</div>
-          <div class="partner-placeholder">SEU LOGO AQUI</div>
-          <div class="partner-placeholder">SEU LOGO AQUI</div>
-          <div class="partner-placeholder">SEU LOGO AQUI</div>
-          <div class="partner-placeholder">SEU LOGO AQUI</div>
-        </div>
-        <div class="partner-cta">
-          <div><strong>Sua empresa pode fazer parte da história.</strong><span>Patrocínio • Apoio • Produtos • Vouchers • Missões</span></div>
-          <a class="button dark" href="#contato">Quero ser parceiro</a>
-        </div>
-      </div>
-    </section>
+<section id="faq" class="section"><div class="container faq"><div><span>07 / FAQ</span><h2>Perguntas<br><em>frequentes.</em></h2><p>As regras oficiais serão publicadas junto com a abertura das inscrições.</p></div><div class="questions">
+<details><summary>Quantas pessoas podem formar uma equipe?</summary><p>Cada equipe terá entre 4 e 6 participantes.</p></details>
+<details><summary>Preciso conhecer o Conjunto Satélite?</summary><p>Não. As instruções e pistas serão elaboradas para que os participantes avancem seguindo as regras da expedição.</p></details>
+<details><summary>Menores de idade podem participar?</summary><p>As regras de idade e eventual autorização de responsável serão informadas no regulamento oficial.</p></details>
+<details><summary>Como será definido o vencedor?</summary><p>O sistema de pontuação, tempo, penalidades e critérios de desempate será publicado no regulamento oficial.</p></details>
+<details><summary>Onde começa a aventura?</summary><p>O ponto de encontro será divulgado oficialmente antes do evento.</p></details>
+</div></div></section>
 
-    <section id="inscricao" class="section register-section">
-      <div class="container register-card">
-        <div>
-          <div class="section-kicker">INSCREVA SUA EQUIPE</div>
-          <h2>Pronto para aceitar o desafio?</h2>
-          <p>As inscrições serão abertas oficialmente em breve. Deixe seu interesse para receber as novidades.</p>
-        </div>
-        <form id="interestForm" class="interest-form">
-          <label>Nome da equipe<input required name="equipe" placeholder="Ex.: Os Desbravadores"></label>
-          <label>WhatsApp<input required name="whatsapp" type="tel" placeholder="(91) 99999-9999"></label>
-          <label>E-mail<input required name="email" type="email" placeholder="voce@email.com"></label>
-          <button class="button primary" type="submit">QUERO RECEBER NOVIDADES</button>
-          <small id="formMessage"></small>
-        </form>
-      </div>
-    </section>
-
-    <section id="faq" class="section dark-section">
-      <div class="container faq-wrap">
-        <div class="section-heading">
-          <div class="section-kicker">DÚVIDAS</div>
-          <h2>Perguntas frequentes</h2>
-        </div>
-        <div class="faq">
-          <details><summary>Quantas pessoas podem participar por equipe?</summary><p>A proposta atual é de equipes com 4 a 6 pessoas.</p></details>
-          <details><summary>Preciso conhecer o Conjunto Satélite?</summary><p>Não. A experiência será construída para que as pistas e orientações conduzam as equipes durante a aventura.</p></details>
-          <details><summary>Posso participar com crianças ou adolescentes?</summary><p>A participação de menores dependerá das regras oficiais do evento e das autorizações necessárias, que serão divulgadas antes das inscrições.</p></details>
-          <details><summary>Onde será o ponto de partida?</summary><p>O local e os detalhes operacionais serão divulgados oficialmente próximo à abertura das inscrições.</p></details>
-          <details><summary>Quando serão divulgadas as regras?</summary><p>O regulamento completo, critérios de pontuação, horários, segurança e premiação serão publicados antes do evento.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="section contact-section">
-      <div class="container contact-grid">
-        <div>
-          <div class="section-kicker">FALE COM A ORGANIZAÇÃO</div>
-          <h2>Tem uma ideia, parceria ou dúvida?</h2>
-          <p>Entre em contato para participar, apoiar ou transformar seu negócio em um ponto da aventura.</p>
-        </div>
-        <div class="contact-buttons">
-          <a class="contact-item" href="https://wa.me/5591999999999" target="_blank" rel="noopener">WhatsApp <span>→</span></a>
-          <a class="contact-item" href="mailto:contato@cacaaotestourosatelite.com.br">E-mail <span>→</span></a>
-          <a class="contact-item" href="https://instagram.com/" target="_blank" rel="noopener">Instagram <span>→</span></a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand"><strong>CAÇA AO TESOURO</strong><span>CONJUNTO SATÉLITE</span></div>
-      <div>Uma aventura feita para explorar, pensar e viver histórias.</div>
-      <div>© 2026 • Projeto em desenvolvimento</div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<section id="contato" class="contact"><div class="container contactin"><div><span>CONTATO</span><h2>Fale com a<br><em>expedição.</em></h2></div><div class="links"><a href="#">WHATSAPP <b>→</b></a><a href="#">INSTAGRAM <b>→</b></a><a href="mailto:contato@seudominio.com">E-MAIL <b>→</b></a></div></div></section>
+</main>
+<footer><div class="container foot"><div><b>CAÇA AO TESOURO</b><small>CONJUNTO SATÉLITE • BELÉM — PA</small></div><small>© 2026 — Projeto em desenvolvimento</small></div></footer>
+<script src="script.js"></script>
+</body></html>
