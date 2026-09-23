@@ -1,31 +1,26 @@
-# Caça ao Tesouro – Conjunto Satélite
+CAÇA AO TESOURO – CONJUNTO SATÉLITE
+VERSÃO 2
 
-Primeira versão do site institucional do evento.
+Substitua os arquivos da V1 no GitHub por:
+- index.html
+- style.css
+- script.js
 
-## Arquivos
-- `index.html` — página completa
-- `style.css` — identidade visual e responsividade
-- `script.js` — menu mobile e formulário de demonstração
+Novidades:
+- contador regressivo;
+- seção de mapa do Conjunto Satélite;
+- legenda do mapa;
+- identidade visual reforçada;
+- estrutura preparada para Google Forms;
+- layout responsivo.
 
-## Como usar
-Abra `index.html` no navegador.
+ANTES DE PUBLICAR:
+1. Abra script.js.
+2. Troque EVENT_DATE pela data/hora reais.
+3. Depois de criar o Google Forms, coloque o link em REGISTRATION_URL.
+4. No index.html, troque WhatsApp, e-mail e Instagram.
+5. Substitua os blocos "SEU LOGO AQUI" pelos patrocinadores.
 
-## Antes de publicar
-Substitua:
-- número de WhatsApp no HTML;
-- e-mail de contato;
-- link do Instagram;
-- logos dos parceiros;
-- datas, horários, local e regras oficiais;
-- formulário de interesse por um Google Forms real.
-
-## Identidade visual
-A página usa a mesma direção visual da arte da caveira criada para o evento:
-- caveira central;
-- ossos cruzados;
-- bússola;
-- mapa do tesouro;
-- dourado envelhecido;
-- vermelho escuro;
-- marrom/escuro;
-- textura de mapa antigo.
+NO GITHUB:
+Add file > Upload files > selecione os 3 arquivos > Commit changes.
+O GitHub Pages atualizará o site.
