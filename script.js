@@ -1,6 +1,6 @@
 // ALTERE ESTES DOIS VALORES ANTES DE PUBLICAR
-const EVENT_DATE = "2026-12-12T08:00:00-03:00";
-const REGISTRATION_URL = "";
+const EVENT_DATE = "2026-12-06T08:00:00-03:00";
+const REGISTRATION_URL = "https://forms.gle/RWcnx9jeKF2bih5fA";
 
 const hamburger=document.querySelector(".hamb");
 const nav=document.querySelector("nav");
